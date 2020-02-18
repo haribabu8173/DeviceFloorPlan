@@ -1,0 +1,9 @@
+post http://localhost:4300/api/signup
+payload {"username":"siva", "password":"asd123", "email": "siva@gmail.com", "mobile":"012345678"}
+
+post http://localhost:4300/api/login  
+payload { "email": "siva@gmail.com", "password":"asd123"}
+
+get http://localhost:4300/api/users/
+
+get http://localhost:4300/api/courses

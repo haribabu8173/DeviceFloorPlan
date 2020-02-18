@@ -1,0 +1,34 @@
+
+
+.header-navbar{
+    background-color: rgb(1, 66, 103);
+    background-image: linear-gradient(90deg, rgb(20, 99, 144), #00304C);
+    margin-top: 65px;
+    width: 102%;
+    height: 40px;
+    z-index: 1000;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255);
+    font-size: 18px;
+}
+.nav-start-elements li{
+    margin: 0px 13px;
+    font-size: 18px;
+}
+
+.nav-header-elements{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+.nav-header-elements a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+

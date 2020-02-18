@@ -1,0 +1,11 @@
+{"devices":[
+    {
+      "deviceId": 1,
+      "name": "ABC"
+    },
+    {
+      "deviceId": 2,
+      "name": "xyz"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+
+    <div class="container-fluid profile-conteiner">
+        <div class="row profile">
+     
+
+        <div class="col-md-12" > 
+          <div class="row flex-row">
+            <div class="col-md-6">
+                <div class="col-md-12 "> 
+                <div class="row">
+                <div class="col-md-5">
+                    <img class="profile-pic" src="assets/images/user.png"> 
+                </div>
+                <div class="col-md-7">
+                    <h3 class="">phani</h3>
+                    <div class="">
+                        <ul class="social-icons">
+                            <a class="social-links" href=""> <li ><i class="fa fa-facebook social-icon" ></i></li></a>
+                            <a class="social-links" href=""> <li ><i class="fa fa-twitter social-icon" ></i></li></a>
+                            <a class="social-links" href=""> <li ><i class="fa fa-skype social-icon"></i></li></a>
+                            <a class="social-links" href=""> <li ><i class="fa fa-linkedin social-icon" ></i></li></a>
+                        </ul>
+                    </div>
+                    <div class="proflie-bottons">
+                        <span class="proflie-botton"><i class="fa fa-download" aria-hidden="true"></i>DownLoad</span>
+                        <span class="proflie-botton"><i class="fa fa-file-text-o" aria-hidden="true"></i>ViewResume</span>
+                    </div>
+                </div>
+                </div>
+                <div class="">
+                    <h2>Profile Summary</h2>
+                    <div class="Summary-body">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Porro corporis harum voluptas asperiores blanditiis </span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+                <div class="">
+                    <embed class="youtube-play" src="https://www.youtube.com/embed/F9Bo89m2f6g" allowfullscreen="true">
+                </div>
+            </div>
+          </div>
+
+          <div class="row profile-row">
+              <div class="col-md-12 profile-content">
+                    <div class="profile-head "><h4>PersonalInfro</h4></div>
+              </div>
+              <div class="col-md-12">
+                    <div class="row profile-content-body">
+                        <div class="col-md-12 profile-content-inside-body drop-shadow">
+                        <div class="col-md-6">
+                            <div class="row">
+                            <div class="col-md-4">
+                                <div>Name:</div>
+                                <div>Email:</div>
+                                <div>MobileNo:</div>
+                            </div>
+                            <div class="col-md-8" *ngIf="userdata!=null" >
+                                <div>{{userdata.Personal.Name}}</div>
+                                <div>{{userdata.email}}</div>
+                                <div>{{userdata.Personal.MobileNo}}</div>
+                            </div> 
+                        </div>  
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                            <div class="col-md-4">
+                                <div>LanguagesKnown:</div>
+                                <div>Gender:</div>
+                            </div>
+                            <div class="col-md-8" *ngIf="userdata!=null">
+                                <div>
+                                   <span> {{userdata.Personal.LanguagesKnown}}</span>
+                                </div>
+                                <div>{{userdata.Personal.Gender}}</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div> 
+                  </div>
+                </div>
+
+                <div class="row profile-row">
+                    <div class="col-md-12 profile-content">
+                        <div class="profile-head profile-head-addr"><h4>Address</h4></div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class=" row profile-content-body">
+                            <div class="col-md-12 profile-content-inside-body drop-shadow ">
+                                <div class="col-md-6" >
+                                    <h3>PresentAddress:</h3>
+                                    <span class="" *ngIf="userdata!=null">{{userdata.Personal.Address.address1}}</span>
+                                    <span class="" *ngIf="userdata!=null">{{userdata.Personal.Address.address2}}</span>
+                                    <span class="" *ngIf="userdata!=null">{{userdata.Personal.Address.city}}</span>
+                                    <span class="" *ngIf="userdata!=null">{{userdata.Personal.Address.state}}</span>
+                                    <span class="" *ngIf="userdata!=null">{{userdata.Personal.Address.pin}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row profile-row">
+                    <div class="col-md-12 profile-content">
+                        <div class="profile-head profile-head-edu"><h4>EducationDetails</h4></div>
+                    </div>
+                    <div *ngIf="userdata!=null">
+                    <div class="col-md-12 profile-content-body-edu"  *ngFor="let item of userdata.Education;let i = index" >
+                        <div class=" row " *ngIf="(i/2)==0" >
+                            <div class="col-md-5 profile-content-inside-body-edu drop-shadow "  >
+                                
+                                <div class="border-btm-user ">
+                                    <h4>{{"Education "+(i+1)}}</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div>Board:</div>
+                                        <div>Institution:</div>
+                                        <div>Univercity :</div>
+                                        <div>YearOfPassing:</div>
+                                        <div>Percentage:</div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="">{{item.Board}}</div>
+                                        <div class="">{{item.Institution}}</div>
+                                        <div class="">{{item.Univercity}}</div>
+                                        <div class="">{{item.YearOfPassing}}</div>
+                                        <div class="">{{item.Percentage}}</div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div *ngIf="userdata.Education[i+1]"  class="col-md-5 profile-content-inside-body-edu drop-shadow "  >
+                                
+                                <div class="border-btm-user ">
+                                    <h4>{{"Education "+(i+2)}}</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div>Board:</div>
+                                        <div>Institution:</div>
+                                        <div>Univercity :</div>
+                                        <div>YearOfPassing:</div>
+                                        <div>Percentage:</div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="">{{userdata.Education[i+1].Board}}</div>
+                                        <div class="">{{userdata.Education[i+1].Institution}}</div>
+                                        <div class="">{{userdata.Education[i+1].Univercity}}</div>
+                                        <div class="">{{userdata.Education[i+1].YearOfPassing}}</div>
+                                        <div class="">{{userdata.Education[i+1].Percentage}}</div>
+                                    </div> 
+                                </div>
+                            </div>
+                           
+                        </div>
+    
+                    </div>
+                </div>
+                </div>
+
+                <div class="row profile-row">
+                    <div class="col-md-12 profile-content">
+                        <div class="profile-head profile-head-skill"><h4>SkillSet</h4></div>
+                    </div>
+                    <div class="col-md-12" >
+                        <div class=" row profile-content-body">
+                            <div *ngIf="userdata!=null" class="col-md-12 profile-content-inside-body drop-shadow ">
+                                <div  *ngFor="let item of userdata.Skills">
+                                    <p>{{item.name}} :{{item.exp}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row profile-row">
+                        <div class="col-md-12 profile-content">
+                            <div class="profile-head profile-head-pro"><h4>ProjectInfro</h4></div>
+                        </div>
+                        <div *ngIf="userdata!=null">
+                        <div class="col-md-12 profile-content-body-edu" *ngFor="let item of userdata.Project;let i = index" >
+                            <div class=" row " *ngIf="(i/2)==0">
+                                <div class="col-md-5 profile-content-inside-body-edu drop-shadow " >
+                                    
+                                    <div class="border-btm-user ">
+                                        <h4>{{"Project "+(i+1)}}</h4>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div><b>Name :</b> {{item.Name}}</div>
+                                            <div><b>Duration:</b> {{item.Discription}} </div>
+                                            <div><b>Domain :</b> {{item.Duration}} </div>
+                                            <div><b>Duration :</b> {{item.Responsebilites}}</div>
+                                            <div><b>Responsebilites :</b> {{item.Domain}} </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div *ngIf="userdata.Project[i+1]" class="col-md-5 profile-content-inside-body-edu drop-shadow " >
+                                    
+                                    <div class="border-btm-user ">
+                                        <h4>{{"Project "+(i+2)}}</h4>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div><b>Name :</b> {{userdata.Project[i+1].Name}}</div>
+                                            <div><b>Duration:</b> {{userdata.Project[i+1].Discription}} </div>
+                                            <div><b>Domain :</b> {{userdata.Project[i+1].Duration}} </div>
+                                            <div><b>Duration :</b> {{userdata.Project[i+1].Responsebilites}}</div>
+                                            <div><b>Responsebilites :</b> {{userdata.Project[i+1].Domain}} </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+          </div>
+        
+        </div>
+    </div>      
+      

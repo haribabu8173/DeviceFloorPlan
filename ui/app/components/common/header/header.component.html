@@ -1,0 +1,26 @@
+
+<div class="container-fluid fixed-top ">
+  <div class="row header-top">
+    <div class="col-md-4 ">
+      <a class="profile active" [routerLink]="['course/Node%20JS/1']" fragment=true><img class="img-logo" src="assets/images/pc-logo.png" alt="logo"></a>
+      <h1 class="logo-head">PioneerCoders</h1>
+    </div>
+    <div class="col-md-2 offset-md-6">
+      <ul *ngIf="!this.UserSignupService.LoginStatus; else loggedIn"  class="nav-header-elements">
+        <li ><button class="nav-signUp" mat-raised-button (click)="openDialog()">Sign Up</button></li>
+        <li class="nav-signIn" mat-raised-button (click)="openLoginDialog()"> Login </li>
+        
+      </ul>
+      <ng-template #loggedIn >
+        <ul class="nav-header-elements">
+          <li > <button class="nav-signUp"> <a [routerLink]="['student']" fragment=true>{{ this.UserSignupService.LoginData.username}}</a></button> </li>
+          <li class="nav-signIn" mat-raised-button (click)="logOut()"> Logout </li>
+          </ul>
+        </ng-template> 
+    </div>
+  </div>
+</div>
+
+
+
+    

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Address</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="studentAddress.css">
+</head>
+<body>
+        <div class="container-fluid">
+                <h3>Address</h3>
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                  <div class="drop-shadow">
+                    <h4>currentAddress</h4>
+                    <div class="row">
+                        <div class="col-md-2 col-md-offset-4">
+                            <span class="data-edit">Edit</span><span><i class="fa fa-pencil-square-o"></span></i></span>
+                        </div>
+                        </div>
+                    <div class="row">
+                    <div class="col-md-5">
+                       
+                    <form>
+                        <textarea class="col-md-12 form-control" rows="3" type="text" placeholder="Add Tag"></textarea>
+                        <div class=" form-group">
+                        <select class="col-md-12 form-control" id="sel1">
+                            <option value="Institution">SelectCity</option>
+                            <option value="#">Bangalore</option>
+                            <option value="#">Mumabi</option>
+                            <option value="#">Hydreabad</option>
+                            <option value="#">Channai</option>
+                            <option value="#">Guntur</option>
+                            <option value="#">Others</option>
+                        </select>
+                        </div>
+                        <div class="form-group">
+                        <select class="col-md-12 form-control" id="sel1">
+                            <option value="Institution">SelectCountry</option>
+                            <option value="#">India</option>
+                            <option value="#">USA</option>
+                            <option value="#">UK</option>
+                            <option value="#">Singapore</option>
+                            <option value="#">Uganda</option>
+                            <option value="#">Others</option>
+                        </select>
+                        </div>
+                        <div class="form-group">
+                        <select class="col-md-12 form-control" id="sel1">
+                            <option value="Institution">SelectState</option>
+                            <option value="#">AndhraPradesh</option>
+                            <option value="#">Karnataka</option>
+                            <option value="#">Tamilnadu</option>
+                            <option value="#">Kerala</option>
+                            <option value="#">Assam</option>
+                            <option value="#">Others</option>
+                        </select>
+                        </div>
+                        <input type="text" class="col-md-12 form-control" placeholder="Pincode">
+                        <div class="row">
+                            <div class="col-md-2 col-md-offset-9">
+                                <button class="address-save-button">Save ≫</button>
+                            </div> 
+                        </div>
+                  </div>    
+                  </form>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>          
+</body>

@@ -1,0 +1,34 @@
+body{
+    position: relative;
+    font-size: 16px;
+}
+.drop-shadow {
+    -webkit-box-shadow: 0 0 5px 2px rgba(117, 112, 112, 0.452);
+    box-shadow: 0 0 5px 2px rgba(117, 112, 112, 0.452);    
+}
+.drop-shadow h4:first-child{
+    padding: 10px;
+    border-bottom: 3px solid #ff5722;
+}
+.form-control{
+    margin: 15px;
+}
+.data-edit{
+
+    border-radius: 10px 0px;
+    margin-left: 30px;
+}
+.education-details-button{
+    height: 40px;
+    width: 70px;
+    background-color: transparent;
+    border: 2px solid #18BB7C;
+    border-radius: 10px 0px;
+    margin-left: 13px;
+    font-size: 14px;
+    margin-bottom:15px;
+}
+.education-details-button:hover{
+    background-color:  #18BB7C;
+    color: white;
+}

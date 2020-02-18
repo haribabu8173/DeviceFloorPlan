@@ -1,0 +1,108 @@
+.profile-conteiner{
+    
+}
+
+.drop-shadow {
+    -webkit-box-shadow: 0 0 5px 2px rgba(117, 112, 112, 0.452);
+    box-shadow: 0 0 5px 2px rgba(117, 112, 112, 0.452);    
+}
+
+
+.flex-row{
+    background: #313540;
+    color: white;
+    padding: 0%;
+}
+.profile-pic{
+    width: 100%;
+}
+.social-icons{
+    list-style: none;
+    display: flex;
+    padding: 0%;
+    margin: 20px 0px;
+}
+.social-links{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 10px;
+}
+.social-icon{
+    margin: 10px;
+    font-size: 20px;
+}
+.proflie-bottons{
+    padding-top: 9%;
+}
+.proflie-botton{
+    background: none;
+    color: white;
+    padding: 2%;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 13px;
+}
+.Summary-body{
+    font-size: 16px;
+    padding-top: 20px;
+}
+.youtube-play{
+    height: 350px;
+    width: 100%;
+}
+.profile-content{
+  
+    margin-top: 15px;
+}
+.profile-head{
+    background: #18BB7C;
+    height: 60px;
+    border: 1px solid #18BB7C;
+    border-radius: 14px 14px 0px 0px;
+}
+.profile-head h4{
+    padding-top: 10px;
+    padding-left: 10px;
+    color: white;
+}
+.profile-content-body{
+   
+    padding: 0%;
+    margin: 0px;
+}
+.profile-content-inside-body{
+    
+    margin: 20px 0px;
+    font-size: 18px;
+    line-height: 40px;
+}
+.profile-head-addr{
+    background: #F27C66;
+    border: 1px solid #F27C66;
+}
+.profile-head-edu{
+    background: rgb(236, 164, 69);
+    border: 1px solid rgb(236, 164, 69);
+}
+.profile-content-inside-body-edu{
+    margin: 20px 40px;
+    font-size: 18px;
+    line-height: 40px;
+}
+.profile-content-body-edu{
+    
+}
+.border-btm-user {
+    border-bottom: 3px solid #5db2ff;
+}
+.profile-head-skill{
+    background: #09afce;
+    border: 1px solid #09afce;
+}
+.profile-head-pro{
+    background: #00304C;
+    border: 1px solid #00304C;
+}
